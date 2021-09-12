@@ -1,0 +1,60 @@
+<form [formGroup]="form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name:</mat-label>
+        <input 
+            id="name" 
+            type="text"
+            placeholder="Name"
+            formControlName="name"
+            matInput >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email:</mat-label>
+        <input 
+            id="email" 
+            type="text"
+            placeholder="Email"
+            formControlName="email"
+            matInput >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Job title:</mat-label>
+        <input 
+            id="jobTitle" 
+            type="text"
+            placeholder="jobTitle"
+            formControlName="jobTitle"
+            matInput >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Phone number:</mat-label>
+        <input 
+            id="phone" 
+            type="text"
+            placeholder="Phone number"
+            formControlName="phone"
+            matInput >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Image url:</mat-label>
+        <input 
+            id="imageUrl" 
+            type="text"
+            placeholder="imageUrl"
+            formControlName="imageUrl"
+            matInput >
+    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <button 
+            mat-stroked-button 
+            color="primary" 
+            type="submit"
+            [disabled]="!form.valid"
+            [mat-dialog-close]="form.getRawValue()">Mentés</button>
+        <button 
+            mat-stroked-button 
+            color="primary" 
+            type="submit"
+            (click)="onNoClick()">Mégse</button>
+    </div>
+</form>

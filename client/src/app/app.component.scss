@@ -1,0 +1,41 @@
+.example-card {
+    max-width: 400px;
+    width: 300px;
+    margin-bottom: 8px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 200px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+.content {
+    margin: 0 1em 0 1em;
+    img {
+        max-width: 100px;
+        float: right;
+    }
+    .card-btns {
+        margin-top: 0.5em;
+    }
+    li {
+        list-style: none;
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+.material-icons {
+    font-size: 20px;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+    height: 30px;
+}
